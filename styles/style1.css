@@ -1,0 +1,8 @@
+input {
+	width: 300px;
+	height: 50px;
+	background: #fefcea;
+	background: linear-gradient(120deg, #d84268, #ec8a20, #f1577d);
+	color: #0;
+	font-size: 24px;
+}
