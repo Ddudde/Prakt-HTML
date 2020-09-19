@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- установка кодировки -->
+		<meta charset="UTF-8">
+		<!-- заголовок -->
+		<title>Заголовок</title>
+		<link rel="stylesheet" href="styles/style2.css">
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>Контактная информация</legend>
+				<p><label for="name">ФИО </label><input type="text" size="40" id="name"></p>
+				<p><label for="tel">Телефон </label><input type="text" size="40" id="tel"></p>
+				<p><label for="email">E-mail </label><input type="email" size="40" id="email"></p>
+				<p><label for="par">Пароль </label><input type="text" size="40" id="par"></p>
+				<p>Страна:</p>
+				<select name = "country">
+					<option value = "Russia" selected>Россия</option>
+					<option value = "Kazakhstan">Казахстан</option>
+					<option value = "Belarus">Беларусь</option>
+					<option value = "Tajikistan">Таджикистан</option>
+					<option value = "Uzbekistan">Узбекистан</option>
+					<option value = "Armenia">Армения</option>
+					<option value = "Kyrgyzstan">Кыргызстан</option>
+					<option value = "Azerbaijan">Азербайджан</option>
+					<option value = "Moldova">Молдова</option>
+					<option value = "Ukraine">Украина</option>
+					<option value = "Turkmenistan">Туркменистан</option>
+				</select>
+				<p>Укажите ваш пол:</p>
+				<p><input type="radio" value="man" checked name="gender"/> Мужчина</p>
+				<p><input type="radio" value="woman" checked name="gender"/> Женщина</p>
+				<p>Как вы нас нашли:</p>
+				<p><input type="checkbox" name="search"/> Через поисковую систему по запросу</p>
+				<p><input type="checkbox" name="searcht"/> Через поисковую систему по тематическому запросу</p>
+				<p><input type="checkbox" name="internet"/> По ссылке, размещённой на другом ресурсе</p>
+				<p><input type="checkbox" name="friendlyfire"/> Порекомендовали знакомые</p>
+				<p><input type="checkbox" name="FBI"/> Я из ФСБ/ФБР(нужное подчеркнуть)</p>
+				<p><input type="submit" value="Отправить"></p>
+			</fieldset>
+		</form>
+	</body>
+</html>
