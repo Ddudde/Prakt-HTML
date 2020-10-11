@@ -1,0 +1,7 @@
+frame {
+	border-radius: 10px;
+    border: 4px solid black;
+	background: linear-gradient(60deg, #268, #ec8a20, #f15);
+	color: #0;
+	font-size: 24px;
+}

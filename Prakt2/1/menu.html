@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- установка кодировки -->
+		<meta charset="UTF-8">
+		<script>
+			function is1() {
+				window.open("1.html", 'CONTENT');
+			}
+			function is2() {
+				window.open("2.html", 'CONTENT');
+			}
+			function is3() {
+				window.open("3.html", 'CONTENT');
+			}
+			function is4() {
+				window.open("4.html", 'CONTENT');
+			}
+		</script>
+	</head>
+	<body>
+		<!-- текст с пустыми элементами -->
+		<p>Меню</p>
+		<menu label="Файл">
+			<button type="button" onclick="is1()">1 раунд</button>
+			<button type="button" onclick="is2()">2 раунд</button>
+			<button type="button" onclick="is3()">3 раунд</button>
+			<button type="button" onclick="is4()">4 раунд</button>
+		</menu>
+	</body>
+</html>
