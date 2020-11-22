@@ -1,0 +1,72 @@
+.a1{
+	color: red;
+	text-decoration: overline underline;
+    text-decoration-style: solid;
+    text-decoration-color: #4B0082;
+}
+
+.a2{
+	text-decoration: line-through;
+    text-decoration-style: double;
+    text-decoration-color: #aba040;
+}
+
+.a3{
+	text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #25f7e9;
+}
+
+.a4{
+	text-decoration: overline;
+    text-decoration-style: dashed;
+    text-decoration-color: #9257e0;
+}
+
+.a5{
+	text-decoration: line-through;
+    text-decoration-style: wavy;
+    text-decoration-color: #961e1f;
+}
+
+.a6{
+	text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #2c4173;
+}
+
+.a7{
+	text-decoration: overline;
+    text-decoration-style: double;
+    text-decoration-color: #9353ef;
+}
+
+.a8{
+	text-decoration: line-through;
+    text-decoration-style: dotted;
+    text-decoration-color: #38d8db;
+}
+
+.a9{
+	text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: #5e3aa6;
+}
+
+.a10{
+	text-decoration: overline;
+    text-decoration-style: wavy;
+    text-decoration-color: #1f5d73;
+}
+
+.a11{
+	text-decoration: line-through;
+    text-decoration-style: solid;
+    text-decoration-color: #f5f250;
+}
+
+.a12{
+	text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: #31843e;
+}

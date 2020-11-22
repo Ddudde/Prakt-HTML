@@ -1,0 +1,43 @@
+.tr1{
+	font-weight: bolder;
+	background: white;
+	color: #4B0082;
+}
+.tr2{
+	font-weight: bolder;
+	color: #4B0082;
+	border: 1px solid white;
+	width: 800px;
+	height: 30px;
+	transition: .3s;
+}
+.tr2:hover{
+	width: 800px;
+	height: 50px;
+}
+.table{
+	border-collapse: collapse;
+	background-image: url(../media/1.jpg);
+}
+.table1{
+	position: fixed;
+	border: 2px solid white;
+	border-spacing: 50px 0px;
+	left: -45px;
+}
+.tr3{
+	font-weight: bolder;
+	color: #4169E1;
+	border-bottom: 2px solid #4169E1;
+}
+.tr4{
+	font-weight: bolder;
+	color: #7B68EE;
+	width: 800px;
+	height: 30px;
+	transition: .3s;
+}
+.tr4:hover{
+	width: 800px;
+	height: 50px;
+}
