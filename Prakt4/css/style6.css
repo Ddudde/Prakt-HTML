@@ -1,0 +1,41 @@
+.gl{
+	font-weight: bold;
+	font-size: 150%;
+	margin: 5px 10px;
+}
+.kn{
+	display: inline-block;
+	border-radius: 40px;
+	padding: 3px 10px;
+	background-color: rgb(224, 224, 224);
+	font-size: 60%;
+	color: #49423d;
+	font-weight: normal;
+}
+td{
+	width: 90px;
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+}
+.dsf:hover{
+	height: 155px;
+	border: 1px solid #7d7f7d;
+}
+img{
+	width: 50%;
+}
+.OTD{
+	font-weight: bolder;
+}
+.OTDV{
+	font-weight: bolder;
+	color: red;
+}
+.TD{
+	font-weight: bold;
+}
+.Day, .TN, .Des{
+	color: #7d7f7d;
+	font-size: 12px;
+}

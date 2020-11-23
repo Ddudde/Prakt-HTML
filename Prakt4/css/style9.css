@@ -1,0 +1,30 @@
+ul {
+    list-style: none;
+    display: block;
+    margin:0px;
+    padding:0px;
+}
+ul.mmenuu > li {
+    float: left;
+    position: relative;
+}
+li{
+	text-align: center;
+	padding: 10px;
+	background-color: orange;
+	border: 4px outset gray;
+	cursor: pointer;
+}
+li:hover{
+	border: 4px inset gray;
+}
+ul.ssubmenuu {
+    position: absolute;
+    width: 240px;
+    top: 44px;
+    left:-4px;
+    display: none;
+}
+ul.mmenuu > li:hover > ul.ssubmenuu {
+    display: block;
+}

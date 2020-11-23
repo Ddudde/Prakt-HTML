@@ -1,0 +1,27 @@
+.r10{
+	background-color: #c23737;
+	height: 10%;
+}
+.r25{
+	background-color: #c5850d;
+	height: 25%;
+}
+.r50{
+	background-color: #e4c724;
+	height: 50%;
+}
+.r75{
+	background-color: #97e44f;
+	height: 75%;
+}
+.r100{
+	background-color: #2eb30d;
+	height: 100%;
+}
+.t{
+	border-top: 20px solid white;
+	width: 80%;
+	vertical-align: bottom;
+	text-align: center;
+	font-weight: bold;
+}

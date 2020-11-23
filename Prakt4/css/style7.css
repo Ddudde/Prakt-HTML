@@ -1,0 +1,23 @@
+.a{
+    display: block;
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    margin: 40px 200px;
+    text-align: center;
+}
+.n1:hover{
+    transform: rotate(75deg);
+}
+.n2:hover{
+    transform: scaleX(3);
+}
+.n3:hover{
+    transform: skewX(45deg);
+}
+.n4:hover{
+    transform: translateX(300px) skewY(45deg);
+}
+.n5:hover{
+    transform: rotate(-75deg) scale(1.5);
+}
