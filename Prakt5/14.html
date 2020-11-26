@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			var div = document.createElement("div");
+			document.body.appendChild(div);
+			div.innerHTML = 'Задача 14.1: (while) ';
+			let i = 1;
+			while (i < 101) {
+				div.innerHTML += ' ' + i;
+				i++;
+			}
+			div.innerHTML += '<br>(for)';
+			for (let i = 1; i < 101; i++) {
+				div.innerHTML += ' ' + i;
+			}
+			div.innerHTML += '<br>Задача 14.2: (while) ';
+			i = 11;
+			while (i < 34) {
+				div.innerHTML += ' ' + i;
+				i++;
+			}
+			div.innerHTML += '<br>(for)';
+			for (let i = 11; i < 34; i++) {
+				div.innerHTML += ' ' + i;
+			}
+			div.innerHTML += '<br>Задача 14.3: (while) ';
+			i = 0;
+			while (i < 101) {
+				div.innerHTML += ' ' + i;
+				i += 2;
+			}
+			div.innerHTML += '<br>(for)';
+			for (let i = 0; i < 101; i += 2) {
+				div.innerHTML += ' ' + i;
+			}
+			div.innerHTML += '<br>Задача 14.4: (while) ';
+			i = 0;
+			let rez = 0;
+			while (i < 101)
+			{
+				rez += i;
+				i++;
+			}
+			div.innerHTML += rez;
+			rez = 0;
+			for (let i = 0; i < 101; i++) {
+				rez += i;
+			}
+			div.innerHTML += '<br>(for) ' + rez;
+		</script>
+	</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			var div = document.createElement("div");
+			document.body.appendChild(div);
+			div.innerHTML = 'Задача 12.1: ';
+			perv(5);
+			perv(0);
+			perv(-3);
+			perv(2);
+			div.innerHTML += 'Задача 12.2: ';
+			vtor(5);
+			vtor(0);
+			vtor(-3);
+			vtor(2);
+			div.innerHTML += 'Задача 12.3: ';
+			tret(1, 3);
+			tret(0, 6);
+			tret(3, 5);
+			div.innerHTML += 'Задача 12.4: ';
+			chet(0,0);
+			chet(7,0);
+			chet(0,7);
+			chet(7,7);
+			function perv(a) {
+				if (a > 0 && a < 5)
+					div.innerHTML += 'Верно<br>';
+				else
+					div.innerHTML += 'Неверно<br>';
+			}
+			function vtor(a) {
+				if (a == 0 || a == 2)
+				{
+					a += 7;
+					div.innerHTML += `a = ${a}` + '<br>';
+				}
+				else
+				{
+					a /= 10;
+					div.innerHTML += `a = ${a}` + '<br>';
+				}
+			}
+			function tret(a, b) {
+				if (a <= 1 && b >= 3)
+					div.innerHTML += (a+b) + '<br>';
+				else
+					div.innerHTML += (a-b) + '<br>';
+			}
+			function chet(a, b) {
+				if (a > 2 && a < 11 || b > 6 && b < 14)
+					div.innerHTML += 'Верно<br>';
+				else
+					div.innerHTML += 'Неверно<br>';
+			}
+		</script>
+	</body>
+</html>

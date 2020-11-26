@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			var div = document.createElement("div");
+			document.body.appendChild(div);
+			div.innerHTML = 'Задача 16.1: ';
+			var obj = {green: 'зеленый', red: 'красный', blue: 'голубой'};
+			for (let key in obj)
+				div.innerHTML += ' ' + key;
+			div.innerHTML += '<br>Задача 16.2: ';
+			obj = {Коля: '200', Вася: '300', Петя: '400'};
+			for (let el in obj)
+				div.innerHTML += `${el} - зарплата ${obj[el]} долларов` + '<br>';
+		</script>
+	</body>
+</html>

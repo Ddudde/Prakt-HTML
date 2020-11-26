@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			var div = document.createElement("div");
+			document.body.appendChild(div);
+			let arr = ['a', 'b', 'c'];
+			div.innerHTML = `Задача 7.2: ${arr[0]}, ${arr[1]}, ${arr[2]}` + '<br>';
+			arr = ['a', 'b', 'c', 'd'];
+			div.innerHTML += `Задача 7.3: ${arr[0]} + ${arr[1]}, ${arr[2]} + ${arr[3]}` + '<br>';
+			arr = [2, 5, 3, 9];
+			let result = arr[0] * arr[1] + arr[2] * arr[3];
+			div.innerHTML += `Задача 7.4: ${result}`;
+			arr = ['a', 'b', 'c'];
+			setTimeout(function () {alert('Задача 7.1: ' + arr); }, 1000)
+		</script>
+	</body>
+</html>

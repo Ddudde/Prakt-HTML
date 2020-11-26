@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			var div = document.createElement("div");
+			document.body.appendChild(div);
+			var obj = {a: 1, b: 2, c: 3};
+			div.innerHTML = `Задача 8.1: ${obj['c']}, ${obj.c}` + '<br>';
+			obj = {Коля: '1000', Вася: '500', Петя: '200'};
+			div.innerHTML += `Задача 8.2: ${obj['Петя']}, ${obj['Коля']}` + '<br>';
+			obj = {1: 'Понедельник', 2: 'Вторник', 3: 'Среда', 4: 'Четверг', 5: 'Пятница', 6: 'Суббота', 7: 'Воскресенье'};
+			div.innerHTML += `Задача 8.3: ${obj['4']}` + '<br>';
+			let day = 3;
+			div.innerHTML += `Задача 8.4: ${obj[day]}` + '<br>';
+		</script>
+	</body>
+</html>

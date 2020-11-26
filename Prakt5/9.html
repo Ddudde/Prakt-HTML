@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			var div = document.createElement("div");
+			document.body.appendChild(div);
+			let mas = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+			div.innerHTML = `Задача 9.1: ${mas[1][0]}` + '<br>';
+			obj = {js:['jQuery', 'Angular'], php: 'hello', css: 'world'};
+			div.innerHTML += `Задача 9.2: ${obj['js'][0]}` + '<br>';
+			obj = {ru:['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'], en:['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']};
+			div.innerHTML += `Задача 9.3: ${obj['ru'][0]}, ${obj['en'][2]}` + '<br>';
+			let lang = 'ru', day = 3;
+			div.innerHTML += `Задача 9.4: ${obj[lang][day]}`;
+		</script>
+	</body>
+</html>
