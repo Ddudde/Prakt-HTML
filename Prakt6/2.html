@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			var div = document.createElement("div");
+			document.body.appendChild(div);
+			let st = Math.pow(2, 10);
+			div.innerHTML = 'Задача 2.1: ' + st + '<br>';
+			div.innerHTML += 'Задача 2.2: ' + Math.sqrt(245) + '<br>';
+			let mas = [4, 2, 5, 19, 13, 0, 10];
+			let sukubes = 0;
+			for(let el of mas)
+				sukubes += Math.pow(el, 3);
+			div.innerHTML += 'Задача 2.3: ' + Math.sqrt(sukubes);
+		</script>
+	</body>
+</html>

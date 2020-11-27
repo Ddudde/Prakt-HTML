@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			var div = document.createElement("div");
+			document.body.appendChild(div);
+			div.innerHTML = 'Задача 5.1: ' + parseInt((Math.random() + 1)*100) + '<br>';
+			let mas = [];
+			for(let i = 0; i < 10; i++)
+				mas[i] = parseInt(Math.random()*100);
+			div.innerHTML += 'Задача 5.2: ' + mas;
+		</script>
+	</body>
+</html>

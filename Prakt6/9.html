@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			var div = document.createElement("div");
+			document.body.appendChild(div);
+			let st = 'я учу javascript!';
+			div.innerHTML = 'Задача 9.1: ' + st.length + '<br>';
+			div.innerHTML += `Задача 9.2: ${st.slice(2, 5)}, ${st.substring(2, 5)}, ${st.substr(2, 3)}` + '<br>';
+			div.innerHTML += `Задача 9.3: ${st.indexOf('учу')}` + '<br>';
+			div.innerHTML += 'Задача 9.4: ';
+			perv(st, 5);
+			function perv(str, n)
+			{
+				if(str.length > n)
+					div.innerHTML += str.substr(0, n) + '...';
+				else
+					div.innerHTML += str;
+			}
+		</script>
+	</body>
+</html>

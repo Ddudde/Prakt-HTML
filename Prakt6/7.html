@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			var div = document.createElement("div");
+			document.body.appendChild(div);
+			let arr = [12, 15, 20, 25, 59, 79];
+			let i = 0, rez = 0;
+			for(let el of arr)
+			{
+				rez += el;
+				i++;
+			}
+			div.innerHTML = 'Задача 7.1: ' + (rez/i) + '<br>';
+			let fakt = 4;
+			rez = 1;
+			for(let i = 1; i <= fakt; i++)
+				rez *= i;
+			div.innerHTML += 'Задача 7.2: ' + rez;
+		</script>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			var div = document.createElement("div");
+			document.body.appendChild(div);
+			let a = 2, b = 10;
+			div.innerHTML = 'Задача 6.1: ' + Math.abs(a-b) + '<br>';
+			div.innerHTML += 'Задача 6.2:';
+			perv(3, 5);
+			perv(6, 1);
+			function perv(a, b) {
+				c = Math.abs(a-b);
+				div.innerHTML += ` ${c}`;
+			}
+		</script>
+	</body>
+</html>
