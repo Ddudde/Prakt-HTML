@@ -11,7 +11,8 @@
 			var hour = 21;
 			var minutes = 59;
 			var sec = 59;
-			div.innerHTML += 'Задача 5.2: ' + hour + ':' + minutes + ':' + sec;
+			var now = new Date();
+			div.innerHTML += 'Задача 5.2: ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
 		</script>
 	</body>
 </html>
