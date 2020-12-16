@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Задание 13</title>
+		<style>
+		</style>
+		<script>
+			window.onload = function(){
+				for(let el of document.querySelectorAll('ul'))
+					el.style.display = 'block';
+				tree.onclick = chang;
+			}
+			function chang(event){
+				for(let el of event.target.querySelectorAll('ul'))
+					el.style.display = el.style.display == 'block' ? 'none' : 'block';
+			}
+		</script>
+	</head>
+	<body>
+		<ul id="tree">
+			<li>Раз</li>
+			<li>Два</li>
+			<li>Три
+				<ul>
+					<li>Четыре</li>
+					<li>Пять
+						<ul>
+							<li>Вышел</li>
+							<li>Зайка</li>
+							<li>Погулять</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>

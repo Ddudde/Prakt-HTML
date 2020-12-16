@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Задание 5</title>
+		<script>
+			window.onload = function(){
+				var mes = document.getElementById('mes');
+				var mes1 = document.getElementById('mes1');
+				var mes2 = document.getElementById('mes2');
+				var but1 = document.getElementById('but1');
+				var but2 = document.getElementById('but2');
+				var but3 = document.getElementById('but3');
+				var inp1 = document.getElementById('inp1');
+				var inp2 = document.getElementById('inp2');
+				var inp3 = document.getElementById('inp3');
+				var inp4 = document.getElementById('inp4');
+				let sost = false;
+				inp4.readOnly = true;
+				inp4.style.borderStyle = 'solid';
+				inp4.style.borderWidth = '2px';
+				inp4.style.borderRadius = '4px';
+				inp4.style.borderColor = 'black';
+				but1.onclick = function(){
+					mes1.innerHTML = (parseInt(inp1.value) + parseInt(inp2.value));
+				}
+				but3.onclick = function(){
+					if(!sost)
+					{
+						mes.style.fontStyle = 'italic';
+						mes.style.fontWeight = 'normal';
+					} else {
+						mes.style.fontStyle = 'normal';
+						mes.style.fontWeight = 'bolder';
+					}
+					sost = !sost;
+				}
+				inp3.oninput = function(){
+					inp4.value = mes2.innerHTML = inp3.value;
+				}
+				but2.onclick = function(){
+					for(let el of document.querySelectorAll('a'))
+					{
+						el.innerHTML += `(${el.href})`;
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div>Задача 5.1: <span id="mes">Игра 3. «Кто лучше» Игра организуется на основе игры 5, где дети уже сами зашифровывают слова, используя значки, предложенные учителем. Разгадываем слова вместе, выясняя кто лучше сумел зашифровать слово.</span><input type="button" id="but3" value="Меняем!"></div>
+		<div>Задача 5.2:<input type="text" id="inp1"> + <input type="text" id="inp2"> = <span id="mes1">0</span></div>
+		<input type="button" id="but1" value="Нажмите чтобы сложить">
+		<div>Задача 5.3:<input type="text" id="inp3">	<input type="text" id="inp4" value="Пример"><span id="mes2">Пример</span></div>
+		<div>Задача 5.4:
+			<div><a href="https://google.ru">ссылка 1 </a></div>
+			<div><a href="https://tyt.by">ссылка 2 </a></div>
+			<div><a href="https://yandex.ru">ссылка 3 </a></div>
+			<div><input type="button" id="but2" value="Нажмите на меня!"></div>
+		</div>
+	</body>
+</html>

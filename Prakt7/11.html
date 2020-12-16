@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Задание 11</title>
+		<script>
+			let i = 0;
+			let mas = ['media/disk.png', 'media/matb.png', 'media/oxlad.png', 'media/pitanie.png'];
+			var ets;
+			window.onload = function(){
+				ets = document.getElementsByTagName('img');
+				but1.onclick = function(){
+					let i1 = 0;
+					i--;
+					for(let el of ets)
+					{
+						if(i < 0){
+							i1 = 0;
+							i = 3;
+						}
+						console.log((i1 + i));
+						el.src = mas[i1 + i];
+						i1++;
+						if((i1 + i) > 3)
+							i1 = -Math.abs(i);
+					}
+				}
+				but2.onclick = function(){
+					let i1 = 0;
+					i++;
+					for(let el of ets)
+					{
+						if(i > 3){
+							i1 = 0;
+							i = 0;
+						}
+						console.log((i1 + i));
+						el.src = mas[i1 + i];
+						i1++;
+						if((i1 + i) > 3)
+							i1 = -i;
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			<input type="button" id="but1" value="<-">
+			<img src="media/disk.png">
+			<img src="media/matb.png">
+			<img src="media/oxlad.png">
+			<input type="button" id="but2" value="->">
+		</div>
+	</body>
+</html>

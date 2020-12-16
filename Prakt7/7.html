@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Задание 7</title>
+		<script>
+			let i = 0, i1 = 0, i2 = 1, i6 = 1;
+			var intid, intid1;
+			var ets = [], ets1 = [];
+			window.onload = function(){
+				let i4 = 0, i5 = 0;
+				for(let el of document.getElementsByTagName('img'))
+				{
+					if(i4 < 4)
+						ets[i4++] = el;
+					else
+						ets1[i5++] = el;
+				}
+				but1.onclick = function(){
+					setInterval(function (){timer.innerHTML = i++;}, 1000);
+				}
+				but2.onclick = function(){
+					intid = setInterval(function (){timer1.innerHTML = i1++;}, 1000);
+				}
+				but3.onclick = function(){
+					clearInterval(intid);
+				}
+				but4.onclick = function(){
+					setInterval(function (){
+						timer2.innerHTML = new Date().toTimeString();
+					}, 1000);
+				}
+				but5.onclick = function(){
+					setInterval(function (){
+						ets[i2-1].src = 'media/pitanie.png';
+						if(i2 > 3)
+							i2 = 0;
+						ets[i2].src = 'media/oxlad.png';
+						i2++;
+					}, 1000);
+				}
+				but6.onclick = function(){
+					intid1 = setInterval(function (){
+						ets1[i6-1].src = 'media/pitanie.png';
+						if(i6 > 4)
+							i6 = 0;
+						ets1[i6].src = 'media/oxlad.png';
+						i6++;
+					}, 1000);
+				}
+				but7.onclick = function(){
+					clearInterval(intid1);
+				}
+				but8.onclick = function(){
+					setInterval(function (){
+						var date = new Date();
+						timer3.innerHTML = (24 - date.getHours()) + ':' + (60 - date.getMinutes()) + ':' + (60 - date.getSeconds());
+					}, 1000);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div>Задача 7.1: <span id="timer">0</span> c.
+			<input type="button" id="but1" value="Старт!">
+		</div>
+		<div>Задача 7.2: <span id="timer1">0</span> c.
+			<input type="button" id="but2" value="Старт!">
+			<input type="button" id="but3" value="Стоп!">
+		</div>
+		<div>Задача 7.3: <span id="timer2">XX:XX:XX</span>
+			<input type="button" id="but4" value="Старт!">
+		</div>
+		<div>Задача 7.4: 
+			<img src="media/oxlad.png">
+			<img src="media/pitanie.png">
+			<img src="media/pitanie.png">
+			<img src="media/pitanie.png">
+			<input type="button" id="but5" value="Старт!">
+		</div>
+		<div>Задача 7.5: 
+			<img src="media/oxlad.png">
+			<img src="media/pitanie.png">
+			<img src="media/pitanie.png">
+			<img src="media/pitanie.png">
+			<img src="media/pitanie.png">
+			<input type="button" id="but6" value="Старт!">
+			<input type="button" id="but7" value="Стоп!">
+		</div>
+		<div>Задача 7.6: До полуночи <span id="timer3">XX:XX:XX</span>
+			<input type="button" id="but8" value="Старт!">
+		</div>
+	</body>
+</html>

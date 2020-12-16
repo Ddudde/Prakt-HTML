@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Задание 8</title>
+		<style>
+			#elem{
+				background: gray;
+				width: 300px;
+				height: 200px;
+				padding: 20px;
+				overflow: auto;
+			}
+		</style>
+		<script>
+			window.onload = function(){
+				but1.onclick = function(){
+					elem1.innerHTML = elem.scrollTop+'px';
+				}
+				but2.onclick = function(){
+					elem.scrollTop = 200;
+				}
+				but3.onclick = function(){
+					elem.scrollTop = (elem.scrollHeight - elem.clientHeight) - 200;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="elem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. In culpa qui officia deserunt mollit anim id est laborum.Excepteur sint occaecat cupidatat, dolore eu fugiat nulla pariatur non proident. Dolorem sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et fugiat nulla pariatur dolore magna aliqua. Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Nam tempor utamur gubergren no. Pri quas audiam virtute ut, case utamur fuisset eam ut, dolor in reprehenderit iisque accommodare an eam. Reque blandit qui eu, cu vix nonumy volumus. Intellegam fugiat nulla pariatur id usu, vide oporteat vix eu, id illud principes has.</div>
+		<div>Задача 8.1: 
+			<span id="elem1">0px</span>
+			<input type="button" id="but1" value="Замер!">
+		</div>
+		<div>Задача 8.2: 
+			<input type="button" id="but2" value="Вниз!">
+		</div>
+		<div>Задача 8.3: 
+			<input type="button" id="but3" value="Вверх!">
+		</div>
+	</body>
+</html>

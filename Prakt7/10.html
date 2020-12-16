@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Задание 10</title>
+		<style>
+			input{
+				display: block;
+				position: absolute;
+				top: 0px;
+				left: 100%;
+			}
+			#mes1, #mes2, #mes3{
+				background: gray;
+				width: 600px;
+				position: relative;
+			}
+		</style>
+		<script>
+			window.onload = function(){
+				but1.onclick = function(){
+					mes1.style.display = 'none';
+				}
+				but2.onclick = function(){
+					mes2.style.display = 'none';
+				}
+				but3.onclick = function(){
+					mes3.style.display = 'none';
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			<div id="mes1">Очень важное сообщение 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.<input type="button" id="but1" value="Закрыть!"></div>
+			<div id="mes2">Очень важное сообщение 2: In culpa qui officia deserunt mollit anim id est laborum.Excepteur sint occaecat cupidatat, dolore eu fugiat nulla pariatur non proident. Dolorem sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et fugiat nulla pariatur dolore magna aliqua. Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<input type="button" id="but2" value="Закрыть!"></div>
+			<div id="mes3">Очень важное сообщение 3: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Nam tempor utamur gubergren no. Pri quas audiam virtute ut, case utamur fuisset eam ut, dolor in reprehenderit iisque accommodare an eam. Reque blandit qui eu, cu vix nonumy volumus. Intellegam fugiat nulla pariatur id usu, vide oporteat vix eu, id illud principes has.<input type="button" id="but3" value="Закрыть!"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Задание 2</title>
+		<script>
+			window.onload = function(){
+				var but1 = document.getElementById('but1');
+				var but2 = document.getElementById('but2');
+				var mes = document.getElementById('mes');
+				var m = document.getElementById('m');
+				but1.onclick = function(){
+					mes.innerHTML += 'аньки';
+				}
+				but2.onclick = function(){
+					m.src = 'media/oxlad.png';
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="mes">Задача 2.1: Оп</div>
+		<input type="button" id="but1" value="Меняем!">
+		<div>Задача 2.2: <img id="m" src="media/pitanie.png">
+			<input type="button" id="but2" value="Меняем!">
+		</div>
+	</body>
+</html>

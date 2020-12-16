@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Задание 9</title>
+		<style>
+			body{
+				width: 200vw;
+				height: 200vh;
+			}
+			
+			.zadch{
+				display: inline-block;
+				position: fixed;
+				bottom: 12px;
+			}
+			
+			.b{
+				left: 25%;
+			}
+			
+			.c{
+				left: 45%;
+			}
+			
+			.d{
+				right: 20%;
+			}
+			
+			.e{
+				right: 0%;
+			}
+			
+			#elem{
+				background: gray;
+				width: 600px;
+			}
+		</style>
+		<script>
+			window.onload = function(){
+				but1.onclick = function(){
+					elem1.innerHTML = pageYOffset+'px';
+				}
+				but2.onclick = function(){
+					elem2.innerHTML = pageXOffset+'px';
+				}
+				but3.onclick = function(){
+					window.scrollTo(300, 500);
+				}
+				but4.onclick = function(){
+					window.scrollBy(0, 300);
+				}
+				but5.onclick = function(){
+					window.scrollTo(0, window.innerHeight);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="elem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. In culpa qui officia deserunt mollit anim id est laborum.Excepteur sint occaecat cupidatat, dolore eu fugiat nulla pariatur non proident. Dolorem sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et fugiat nulla pariatur dolore magna aliqua. Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Nam tempor utamur gubergren no. Pri quas audiam virtute ut, case utamur fuisset eam ut, dolor in reprehenderit iisque accommodare an eam. Reque blandit qui eu, cu vix nonumy volumus. Intellegam fugiat nulla pariatur id usu, vide oporteat vix eu, id illud principes has.</div>
+		<div class="zadch a">Задача 9.1: 
+			<span id="elem1">0px</span>
+			<input type="button" id="but1" value="Замер!">
+		</div>
+		<div class="zadch b">Задача 9.2: 
+			<span id="elem2">0px</span>
+			<input type="button" id="but2" value="Вниз!">
+		</div>
+		<div class="zadch c">Задача 9.3: 
+			<input type="button" id="but3" value="Поехали!">
+		</div>
+		<div class="zadch d">Задача 9.4: 
+			<input type="button" id="but4" value="Ниже!">
+		</div>
+		<div class="zadch e">Задача 9.5: 
+			<input type="button" id="but5" value="Вниз!">
+		</div>
+	</body>
+</html>
