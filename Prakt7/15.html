@@ -2,12 +2,37 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Заголовок</title>
-		<link rel="shortcut icon" href="media/favicon.png">
-		<link rel="stylesheet" href="css/home.css">
-		<script src="js/default.js"></script>
+		<title>Задание 15</title>
+		<style>
+			img{
+				border: 1px solid gray;
+				padding: 5px 5px;
+				border-radius: 2px;
+			}
+		</style>
+		<script>
+			window.onload = function(){
+				for(let el of document.querySelectorAll('img'))
+					if(el.id != 'im')
+					{
+						var eb = el.getBoundingClientRect();
+						el.style.width = (eb.width / 1.5) + 'px';
+						el.style.height = (eb.height / 1.5) + 'px';
+					}
+				pr.onclick = function(event){
+					im.src = event.target.src;
+				}
+			}
+		</script>
 	</head>
 	<body>
-		
+		<img id="im" src="media/disk.png">
+		<div id="pr">
+			<img src="media/disk.png">
+			<img src="media/matb.png">
+			<img src="media/oxlad.png">
+			<img src="media/pitanie.png">
+			<img src="media/video.png">
+		</div>
 	</body>
 </html>

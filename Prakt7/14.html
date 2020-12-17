@@ -2,12 +2,23 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Заголовок</title>
-		<link rel="shortcut icon" href="media/favicon.png">
-		<link rel="stylesheet" href="css/home.css">
-		<script src="js/default.js"></script>
+		<title>Задание 14</title>
+		<style>
+		</style>
+		<script>
+			window.onload = function(){
+				var contents = document.createElement('div');
+				contents.id = 'contents';
+				contents.innerHTML = 'Ссылка';
+				contents.style.cursor = 'pointer';
+				contents.onclick = function(){
+					if(confirm('Перейти по ссылке?'))
+						window.location.href = 'https://google.ru';
+				}
+				document.body.appendChild(contents);
+			}
+		</script>
 	</head>
 	<body>
-		
 	</body>
 </html>

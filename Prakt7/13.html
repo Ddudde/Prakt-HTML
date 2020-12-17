@@ -4,35 +4,50 @@
 		<meta charset="UTF-8">
 		<title>Задание 13</title>
 		<style>
+			span{
+				position: absolute;
+				background: burlywood;
+				visibility: hidden;
+				left: 0px;
+			}
+			.podz{
+				position: absolute;
+				background: gray;
+			}
+			#b{
+				top: 95%;
+			}
 		</style>
 		<script>
 			window.onload = function(){
-				for(let el of document.querySelectorAll('ul'))
-					el.style.display = 'block';
-				tree.onclick = chang;
+				for(let el of document.querySelectorAll('span'))
+					el.style.visibility = 'hidden';
+				document.onmouseover = chang;
+				document.onmouseout = chang;
 			}
 			function chang(event){
-				for(let el of event.target.querySelectorAll('ul'))
-					el.style.display = el.style.display == 'block' ? 'none' : 'block';
+				var el = event.target;
+				if(el.dataset.tooltip != null){
+					let pod = el.querySelectorAll('span')[0];
+					if(pod.style.visibility == 'hidden')
+					{
+						let eb = el.getBoundingClientRect();
+						pod.innerHTML = el.dataset.tooltip;
+						let pb = pod.getBoundingClientRect();
+						let et = eb.top - 10 - pb.height, ele = eb.left - 10 - pb.width, ebo = eb.bottom + 10 + pb.height, er = eb.right + 10 + pb.width;
+						pod.style.top = (et >= pageYOffset ? (-pb.height - 5) : (ebo <= (pageYOffset + window.innerHeight) ? (5 + eb.height) : 0))+'px';
+					}
+					pod.style.visibility = pod.style.visibility == 'hidden' ? 'visible' : 'hidden';
+				}
 			}
 		</script>
 	</head>
 	<body>
-		<ul id="tree">
-			<li>Раз</li>
-			<li>Два</li>
-			<li>Три
-				<ul>
-					<li>Четыре</li>
-					<li>Пять
-						<ul>
-							<li>Вышел</li>
-							<li>Зайка</li>
-							<li>Погулять</li>
-						</ul>
-					</li>
-				</ul>
-			</li>
-		</ul>
+		<div class="podz" id="a" data-tooltip="Начните дышать">Чтобы дышать...
+			<span></span>
+		</div>
+		<div class="podz" id="b" data-tooltip="Cпрятаться за дерево и издать звук морковки">Как поймать зайца?
+			<span></span>
+		</div>
 	</body>
 </html>
