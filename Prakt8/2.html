@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Задание 2</title>
+		<style>
+			textarea{
+				width: 400px;
+				height: 200px;
+			}
+		</style>
+		<script>
+			let text;
+			let to, from = 0;
+			window.onload = function(){
+				text = textArea.value;
+				to = text.length;
+				zap.onclick = function(){
+					animate({
+					duration: 5000,
+					timing: bounce,
+					draw: draw});
+				}
+			}
+			function animate({timing, draw, duration}) {
+				let start = performance.now();
+				requestAnimationFrame(function animate(time) {
+					// timeFraction изменяется от 0 до 1
+					let timeFraction = (time - start) / duration;
+					if (timeFraction > 1) timeFraction = 1;
+					// вычисление текущего состояния анимации
+					let progress = timing(timeFraction);
+					draw(progress); // отрисовать её
+					if (timeFraction < 1) {
+						requestAnimationFrame(animate);
+					}
+				});
+			}
+			function draw(progress) {
+				let result = (to - from) * progress + from;
+				textArea.value = text.substr(0, Math.ceil(result));
+			}
+			function bounce(timeFraction) {
+				return timeFraction;
+			}
+		</script>
+	</head>
+	<body>
+		<textarea id="textArea">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</textarea>
+		<input id="zap" type="button" value="Запускаем">
+	</body>
+</html>

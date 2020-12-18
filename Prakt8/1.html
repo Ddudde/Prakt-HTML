@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Задание 1</title>
+		<script>
+		let time = 0, l = 0, iid;
+			window.onload = function(){
+				im.style.left = '0px';
+				im.onclick = function(event){
+					iid = setInterval(loop, 1000/50);
+				}
+			}
+		function loop(){
+			l += 2;
+			im.style.left = l+'px';
+			time += 1000/50;
+			if(time >= 2000)
+			{
+				clearInterval(iid);
+				console.log(l);
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<img id="im" src="media/bibika.png" style="position: absolute;">
+	</body>
+</html>
